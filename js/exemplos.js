@@ -35,3 +35,38 @@ console.log('---------------');
 for(let nome in nomes) {
     console.log(nome);
 }
+
+
+let sol = true;
+
+if(sol === true) {
+    console.log('Vou pra praia');
+} else {
+    console.log('Não vou pra praia');
+}
+
+let sol1 = true;
+let vento = false;
+
+if(sol === true && vento === false) {
+    console.log('Vou a praia');
+} else {
+    console.log('Não vou a praia!');
+}
+
+let tempo = 'sol';
+
+switch(tempo) {
+    case 'sol': {
+        console.log("Vou a praia!");
+        break;
+    }
+    case 'nublado':{
+        console.log("Vou ao cinema!");
+        break;
+    }
+    default: {
+        console.log("Fico em casa!");
+    }
+}
+
