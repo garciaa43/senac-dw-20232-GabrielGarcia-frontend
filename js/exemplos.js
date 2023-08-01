@@ -1,10 +1,10 @@
-//let prompt = require('prompt-sync')();
+let prompt = require('prompt-sync')();
 
-//let curso = prompt('Qual o nome do seu curso?');
-//console.log('Curso: ' + curso);
+let curso = prompt('Qual o nome do seu curso?');
+console.log('Curso: ' + curso);
 
-//let fase = Number(prompt('Informe a fase: '));
-//console.log('Fase: ' + fase);
+let fase = Number(prompt('Informe a fase: '));
+console.log('Fase: ' + fase);
 
 
 let carroA = {fabricante: 'Ford', modelo: 'Mustang', ano: 1969};
