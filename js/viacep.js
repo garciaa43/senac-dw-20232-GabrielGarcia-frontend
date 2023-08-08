@@ -23,11 +23,6 @@ async function buscarCEP(cep) {
 }
 
 function preencherCamposComJSON() {
-    if(json.erro) {
-        pintarCamposdeVermelho();
-    } else {
-        preencherCamposComJSON();
-    }
 
     if(json.bairro) {
         txtBairro.value = json.bairro;

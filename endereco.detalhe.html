@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cadastro de Endereço</title>
+        <script src="./js/viacep.js"></script>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <header >
+            <h1>Cadastro de Endereço</h1>
+            <p>Informe os dados do seu endereço</p>
+        </header>
+        <main>
+            <section>
+                <form class="formulario" id="formulario">
+                    <div id="divCEP">
+                        <div>
+                            <label for="cep">Informe o CEP</label>
+                            <input type="text" id="cep" name="cep" minlength="8" required>
+                            <button type="button" onclick="buscarCEP()">Buscar CEP</button>
+                        </div>
+
+                        <br>
+                        <br>
+
+                        <div>
+                            <label for="rua">Rua:</label>
+                            <input type="text" id="rua" name="rua" minlength="3" required>
+                        </div>
+
+                        <div>
+                            <label for="bairro">Bairro:</label>
+                            <input type="text" id="bairro" name="bairro" required>
+                        </div>
+
+                        <div>
+                            <label for="cidade">Cidade:</label>
+                            <input type="text" id="cidade" name="cidade" required>
+                        </div>
+
+                        <div>
+                            <label for="estado">Estado:</label>
+                            <input type="text" id="estado" name="estado" required>
+                        </div>
+
+                        <div>
+                            <label for="numero">Número:</label>
+                            <input type="text" name="numero" id="numero">
+                        </div>
+
+                        <br>
+
+                        <input id="botao" type="submit" value="Cadastrar"/>
+
+                    </div>
+
+
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>Desenvolvido por Gabriel Garcia Cordeiro</p>
+            <section>
+                <aside>
+                    <p><a href="/index.html">Voltar ao inicio</a></p>
+                </aside>
+            </section>
+        </footer>
+    </body>
+
+</html>

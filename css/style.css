@@ -1,0 +1,37 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#divCEP{
+    background-color: rgb(163, 223, 178);
+    margin: auto;
+    width: 90%;
+    border: 3px solid gray;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+label{
+    margin-right: 1px;
+    display: inline-block;
+    width: 60px;
+}
+
+input{
+    width: 150px;
+}
+
+
