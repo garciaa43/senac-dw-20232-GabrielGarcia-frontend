@@ -5,7 +5,7 @@
         <script src="./js/viacep.js"></script>
         <link rel="stylesheet" href="./css/style.css">
     </head>
-    <body>
+    <body style="background-image: url(fundoNovo.png);">
         <header >
             <h1>Cadastro de Endereço</h1>
             <p>Informe os dados do seu endereço</p>
@@ -15,9 +15,9 @@
                 <form class="formulario" id="formulario">
                     <div id="divCEP">
                         <div>
-                            <label for="cep">Informe o CEP</label>
+                            <label for="cep">CEP</label>
                             <input type="text" id="cep" name="cep" minlength="8" required>
-                            <button type="button" onclick="buscarCEP()">Buscar CEP</button>
+                            <button type="button" onclick="buscarCEP()">Consultar</button>
                         </div>
 
                         <br>
@@ -50,7 +50,7 @@
 
                         <br>
 
-                        <input id="botao" type="submit" value="Cadastrar"/>
+                        <input id="botao" type="submit" value="Cadastrar" onclick="cadastrar()"/>
 
                     </div>
 
@@ -58,11 +58,11 @@
                 </form>
             </section>
         </main>
-        <footer>
+        <footer class="voltar">
             <p>Desenvolvido por Gabriel Garcia Cordeiro</p>
             <section>
                 <aside>
-                    <p><a href="/index.html">Voltar ao inicio</a></p>
+                    <p class="voltarInicio"><a href="/index.html">Voltar ao inicio</a></p>
                 </aside>
             </section>
         </footer>

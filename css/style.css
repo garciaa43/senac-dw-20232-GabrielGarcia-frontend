@@ -1,37 +1,76 @@
-body{
+.corpo{
+    overflow: hidden;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#main{
+    
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
 }
 
 #divCEP{
-    background-color: rgb(163, 223, 178);
+    background-color: gray;
+    opacity: 90%;
     margin: auto;
-    width: 90%;
+    width: 20%;
     border: 3px solid gray;
     border-radius: 15px;
     padding: 10px;
     text-align: center;
+    box-shadow: 20px 20px 54px rgba(0,0,0,0.08);
+    color: white;
+}
+
+#divCEP:hover {
+    background-color: gray;
 }
 
 h1{
+    color: rgb(0, 0, 0);
     text-align: center;
 }
 
-p{
+.titulo{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.voltarInicio{
+    color: rgb(0, 0, 0);
     text-align: center;
 }
 
 label{
+   
     margin-right: 1px;
     display: inline-block;
     width: 60px;
 }
 
 input{
+    margin: 5px;
     width: 150px;
 }
 
+.voltar {
+    color: white;
+    text-align: center;
+    padding: 275px 0;
+}
+
+.logos p{
+    margin: 500px auto;
+    width:fit-content;
+    display:inline-block;
+}
+
+.logos{
+    text-align: center;
+    height:fit-content;
+}
 

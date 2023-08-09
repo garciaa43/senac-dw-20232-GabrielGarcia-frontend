@@ -6,7 +6,7 @@
 
 async function buscarCEP(cep) {
     limpar();
-    var txtCep = document.getElementById('txtCep');
+    var txtCep = document.getElementById('cep');
     var cepInformado = txtCep.value;
 
     const promiseConsultCEP = await fetch(`https://viacep.com.br/ws/${cepInformado}/json/`)
@@ -22,31 +22,31 @@ async function buscarCEP(cep) {
     console.log(json);
 }
 
-function preencherCamposComJSON() {
+function preencherCamposComJSON(json) {
 
     if(json.bairro) {
-        txtBairro.value = json.bairro;
+        bairro.value = json.bairro;
     } else {
-        txtBairro.disabled = false;
+        bairro.disabled = false;
     }
 
-    txtLocalidade.value = json.localidade;
+    cidade.value = json.localidade;
     if(json.logradouro) {
-        txtRua.value = json.logradouro;
+        rua.value = json.logradouro;
     } else {
-        txtRua.disabled = false;
+        rua.disabled = false;
     }
     
 
-    txtUf.value = json.uf;
+    estado.value = json.uf;
 
 }
 
 function limpar() {
-    txtBairro.value = '';
-    txtLocalidade.value = '';
-    txtUf.value = '';
-    txtRua.value = '';
+    bairro.value = '';
+    cidade.value = '';
+    estado.value = '';
+    rua.value = '';
 }
 
 function pintarCamposdeVermelho() {
@@ -54,4 +54,9 @@ function pintarCamposdeVermelho() {
     divDadosEndereco.style = "background-color: red";
     divCEP.style = "background-color: red";
     alert('CEP informado não existe')
+}
+
+
+function cadastrar(cep) {
+    alert('Ainda não desenvolvido')
 }
