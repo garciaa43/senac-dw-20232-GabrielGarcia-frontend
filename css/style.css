@@ -5,8 +5,16 @@
     padding: 0;
 }
 
+.corpoEndereco {
+    overflow: hidden;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: rgb(0,121,21);
+    background: linear-gradient(90deg, rgba(0,121,21,1) 18%, rgba(47,177,0,1) 45%, rgba(21,225,8,1) 85%);
+}
+
 #main{
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,11 +26,11 @@
     opacity: 90%;
     margin: auto;
     width: 20%;
-    border: 3px solid gray;
+    border: 3px solid rgb(0, 0, 0);
     border-radius: 15px;
     padding: 10px;
     text-align: center;
-    box-shadow: 20px 20px 54px rgba(0,0,0,0.08);
+    box-shadow: 2px 2px 8px 2px rgb(2555, 255, 255), -2px -2px 8px 2px rgb(255, 255, 255);
     color: white;
 }
 
@@ -30,7 +38,32 @@
     background-color: gray;
 }
 
+.cabecalho {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
 h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.cadastro {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(0, 0, 0);
     text-align: center;
 }
@@ -55,12 +88,14 @@ label{
 input{
     margin: 5px;
     width: 150px;
+    border-radius: 5px;
+    
 }
 
 .voltar {
     color: white;
     text-align: center;
-    padding: 275px 0;
+    padding: 225px 0;
 }
 
 .logos p{
@@ -74,3 +109,15 @@ input{
     height:fit-content;
 }
 
+
+#botao{
+    margin-left: 35px;
+    width: 100px;
+    padding: 5px;
+}
+
+#botao:hover{
+    background-color: #000000;
+    color: white;
+    box-shadow: 2px 2px 4px, -2px -2px 4px;
+}

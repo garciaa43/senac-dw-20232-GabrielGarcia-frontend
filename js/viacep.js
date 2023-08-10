@@ -18,7 +18,6 @@ async function buscarCEP(cep) {
         preencherCamposComJSON(json);
     }
 
-    
     console.log(json);
 }
 
@@ -42,21 +41,22 @@ function preencherCamposComJSON(json) {
 
 }
 
-function limpar() {
-    bairro.value = '';
-    cidade.value = '';
-    estado.value = '';
-    rua.value = '';
-}
 
 function pintarCamposdeVermelho() {
-    limpar();
-    divDadosEndereco.style = "background-color: red";
-    divCEP.style = "background-color: red";
     alert('CEP informado não existe')
 }
 
 
 function cadastrar(cep) {
     alert('Ainda não desenvolvido')
+}
+
+function limpar() {
+    bairro.value = '';
+    cidade.value = '';
+    estado.value = '';
+    rua.value = '';
+
+    
+    
 }
