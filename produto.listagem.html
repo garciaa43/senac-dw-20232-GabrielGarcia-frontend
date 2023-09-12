@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Listagem de Produtos</title>
+        
+        <!-- Importações de scripts JS, bibliotecas externas, arquivos CSS... -->
+        <script src="./js/produto.listagem.js"></script>
+        <link rel="stylesheet" href="css/style.produto.css">
+    </head>
+    <body>
+        <header class="cabecalho">
+            <h1 class="cabecalho__titulo">Consulta de Produtos</h1>
+        </header>
+        <main class="principal">
+            <div id="divProduto">
+                <h1>Filtro de Produtos</h1>
+
+                <div>
+                    <label for="valorMin">Valor Mínimo</label>
+                    <input type="number" name="valorMin" id="valorMin">
+                </div>
+               
+                <div>
+                    <label for="valorMax">Valor Máximo</label>
+                    <input type="number" name="valorMax" id="valorMax">
+                </div>
+
+                <div>
+                    <label for="pesoMin">Peso Mínimo</label>
+                    <input type="number" name="pesoMin" id="pesoMin">
+                </div>
+
+                <div>
+                    <label for="pesoMax">Peso Máximo</label>
+                    <input type="number" name="pesoMax" id="pesoMax">
+                </div>
+
+                <div>
+                    <label for="cnpj">CNPJ</label>
+                    <input type="text" name="cnpj" id="cnpj">
+                </div>
+
+                
+            </div>
+            <section class="section__principal">
+                <table>
+                    <thead>
+                        <th>#</th>
+                        <th>Nome</th>
+                        <th>Fabricante</th>
+                        <th>Valor (R$)</th>
+                        <th>Peso (kg)</th>
+                    </thead>
+                    <tbody id="corpoTabela">
+                        <button id="buscar" onclick="buscarTodosProdutos()">Buscar Todos</button>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </body>
+</html>
